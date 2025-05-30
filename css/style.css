@@ -129,3 +129,11 @@ body {
     font-size: 0.95em;
     color: #555;
 }
+
+.card-img {
+    width: 5px;      
+    height: 5px;
+    object-fit: contain;  /* Keeps aspect ratio while fitting in box */
+    margin-bottom: 10px;
+}
+
