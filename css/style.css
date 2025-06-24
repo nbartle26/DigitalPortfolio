@@ -24,7 +24,6 @@ body {
     text-decoration: none;
     font-weight: bold;
 }
-
 .navbar a:hover {
     text-decoration: underline;
 }
@@ -255,7 +254,7 @@ body {
 .carousel {
   position: relative;
   width: 100%;
-  max-width: 500px;   /* Increase this value for more width */
+  max-width: 500px;
   height: 500px;
   margin: 0 auto 1.5rem auto;
   overflow: hidden;
@@ -267,17 +266,14 @@ body {
 }
 
 .carousel-image {
-  display: none;
-  width: 100%;         /* Fill the width of the container */
-  height: 100%;        /* Fill the height of the container */
-  object-fit: cover;   /* Crop to fill, touch all edges */
+  display: block;
+  object-fit: cover;
+  object-position: center center;
   transition: opacity 0.5s;
   margin: 0;
   border-radius: 0;
 }
-.carousel-image.active {
-  display: block;
-}
+
 .carousel-btn {
   position: absolute;
   top: 50%;
@@ -330,34 +326,8 @@ body {
   height: 100%;
   display: none;
 }
-.carousel-img-wrapper .carousel-image.active {
-  display: block;
-}
 .carousel-img-wrapper.active {
   display: flex;              /* Use flex to center content */
   align-items: center;        /* Vertical centering */
   justify-content: center;    /* Horizontal centering */
-}
-.carousel-fullscreen-btn {
-  position: absolute;
-  top: 16px;
-  right: 16px;
-  background: rgba(11,61,145,0.85);
-  color: #fff;
-  border: none;
-  border-radius: 50%;
-  width: 32px;
-  height: 32px;
-  font-size: 1.2rem;
-  cursor: pointer;
-  opacity: 0.85;
-  z-index: 2;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: background 0.2s, opacity 0.2s;
-}
-.carousel-fullscreen-btn:hover {
-  background: #0B3D91;
-  opacity: 1;
 }

@@ -5,7 +5,6 @@
     </head>
     <body>
 
-        <!-- Navigation Bar -->
         <nav class="navbar">
             <ul class="nav-left">
                 <li><a href="index.html">Home</a></li>
@@ -15,38 +14,39 @@
             <ul class="nav-right">
                 <li><a href="https://www.linkedin.com/in/nickolasbartle/">LinkedIn</a></li>
                 <li><a href="https://github.com/nbartle26">GitHub</a></li>
-                <li><a href="photos\BartleNickolasTechConsulting.pdf" target="_blank">Resume</a></li>
+                <li><a href="Updated\BartleNickolasAnalyst.pdf" target="_blank">Resume</a></li>
             </ul>
         </nav>
 
-        <!-- Feature Project Section -->
+
         <section class="feature-project">
             <div class="carousel">
-                    <div class="carousel-img-wrapper">
-                        <img src="photos\fpcarousel1.jpg" class="carousel-image active" alt="Project Screenshot 1">
-                        <button class="carousel-fullscreen-btn" title="View Fullscreen">&#x26F6;</button>
+                    <div class="carousel-img-wrapper active">
+                        <img src="photos\fpcarousel1.jpg" class="carousel-image" alt="Project Screenshot 1">
+                        <button class="fullscreen-btn" title="View Fullscreen">&#x26F6;</button>
                     </div>
                     <div class="carousel-img-wrapper">
-                        <img src="photos\fpcarousel1.jpg" class="carousel-image active" alt="Project Screenshot 1">
-                        <button class="carousel-fullscreen-btn" title="View Fullscreen">&#x26F6;</button>
+                        <img src="photos\fpcarousel3.jpg" class="carousel-image" alt="Project Screenshot 2">
+                        <button class="fullscreen-btn" title="View Fullscreen">&#x26F6;</button>
                     </div>
                     <div class="carousel-img-wrapper">
-                        <img src="photos\fpcarousel1.jpg" class="carousel-image active" alt="Project Screenshot 1">
-                        <button class="carousel-fullscreen-btn" title="View Fullscreen">&#x26F6;</button>
+                        <img src="photos\fpcarousel4.jpg" class="carousel-image" alt="Project Screenshot 3">
+                        <button class="fullscreen-btn" title="View Fullscreen">&#x26F6;</button>
                     </div>
                     <div class="carousel-img-wrapper">
-                        <img src="photos\fpcarousel1.jpg" class="carousel-image active" alt="Project Screenshot 1">
-                        <button class="carousel-fullscreen-btn" title="View Fullscreen">&#x26F6;</button>
+                        <img src="photos\fpcarousel5.jpg" class="carousel-image" alt="Project Screenshot 4">
+                        <button class="fullscreen-btn" title="View Fullscreen">&#x26F6;</button>
                     </div>
                     <div class="carousel-img-wrapper">
-                        <img src="photos\fpcarousel1.jpg" class="carousel-image active" alt="Project Screenshot 1">
-                        <button class="carousel-fullscreen-btn" title="View Fullscreen">&#x26F6;</button>
+                        <img src="photos\fpcarousel6.jpg" class="carousel-image" alt="Project Screenshot 5">
+                        <button class="fullscreen-btn" title="View Fullscreen">&#x26F6;</button>
                     </div>
                     <button class="carousel-btn prev">&#10094;</button>
                     <button class="carousel-btn next">&#10095;</button>
             </div>
             <div class="feature-description">
                 <h2>Featured Project: Local Business Full-Stack Website</h3>
+                    <p style="color: red;">IN PROGRESS</p> 
                 <p>This project demonstrates full-stack web development skills by building a modern, responsive service business website with interactive features. On the frontend, I utilized HTML5, CSS3, and JavaScript to create a visually appealing and mobile-friendly user interface, including a dynamic online appointment booking system, a real-time search bar, and a custom quote calculator. Accessibility and user experience were prioritized through semantic markup, ARIA roles, and responsive design techniques, ensuring the site performs seamlessly across devices.</p>
                 <br>
                 <p>On the backend, I implemented a Node.js/Express server with a MySQL database to handle customer bookings, subscriptions, and reviews. Secure data handling, RESTful API design, and asynchronous operations were used to process and store user input efficiently. Additional features such as automated email notifications (via Nodemailer) and robust error handling further enhanced the reliability and professionalism of the platform. This project showcases my ability to integrate frontend interactivity with backend logic to deliver a complete, production-ready web application.</p>
@@ -55,7 +55,7 @@
             </div>
         </section>
 
-                <!-- Project Grid Section -->
+
     <section class="projects-grid">
         <div class="project-card">
             <div class="media-container">
@@ -89,7 +89,7 @@
                     <button class="fullscreen-btn" title="View Fullscreen">&#x26F6;</button>
                 </div>
                 <h3>MLB Interactive Plate Discipline Analysis</h2>
-                <p style="color: red;">IN PROGRESS</p>                <p>A Python-focused codebase that scraped, manipulates, and formats baseball data with the goal to visualize offensive performance in the strikezone. This visual details hot/cold zones of the hitter, their actual and expected statistics, performances vs specific pitch types, splits righty-lefty and lefty/right, and much more. </p> <br>
+                <p style="color: red;">IN PROGRESS</p>                <p>A Python-focused codebase that scrapes, manipulates, and formats baseball data with the goal to visualize offensive performance in the strikezone. This visual details hot/cold zones of the hitter, their actual and expected statistics, performances vs specific pitch types, splits righty-lefty and lefty/right, and much more. </p> <br>
                 <p>This project utilized Pandas for robust data cleaning, transformation, and aggregation of Statcast data, including dynamic zone assignment based on pitch location. Engineered a custom strike zone mapping function to classify pitch locations into 9 standard zones and out-of-zone regions using conditional logic and coordinate binning. Built a Dash web application with interactive components, including a dropdown menu and responsive Plotly visualizations based on user input. Designed custom Plotly strike zone visualizations, integrating statistical overlays (AVG and xAVG) and dynamically adjusting label placement for clarity and comparison. Implemented real-time callback functions to update figures based on player selection, enabling exploratory analysis of offensive performance by zone. </p>
                 <a href="https://github.com/nbartle26/baseball-stats-analyzer" target="_blank">Project Link</a>
                 
@@ -105,7 +105,7 @@
             </div>
         </section>
 
-        <!-- Footer Navbar -->
+
         <footer class="footer-navbar">
             <p>Contact Information</p>
             <p>nickbartle2@gmail.com<br>(919)-656-2434</p>
@@ -150,7 +150,7 @@ prevBtn.addEventListener('click', prevImage);
 // Optional: Auto-advance every 4 seconds
 setInterval(nextImage, 4000);
 
-// Fullscreen for carousel images
+
 document.querySelectorAll('.carousel-fullscreen-btn').forEach(btn => {
   btn.addEventListener('click', function(e) {
     e.stopPropagation();
@@ -161,6 +161,27 @@ document.querySelectorAll('.carousel-fullscreen-btn').forEach(btn => {
       img.webkitRequestFullscreen();
     } else if (img.msRequestFullscreen) {
       img.msRequestFullscreen();
+    }
+  });
+});
+
+document.querySelectorAll('.fullscreen-btn').forEach(btn => {
+  btn.addEventListener('click', function(e) {
+    e.stopPropagation();
+    // For images or videos in .img-wrapper
+    let media = this.previousElementSibling;
+    // If the previous sibling is a text node, get the previous element
+    while (media && media.nodeType !== 1) {
+      media = media.previousSibling;
+    }
+    if (media && (media.tagName === 'IMG' || media.tagName === 'VIDEO')) {
+      if (media.requestFullscreen) {
+        media.requestFullscreen();
+      } else if (media.webkitRequestFullscreen) {
+        media.webkitRequestFullscreen();
+      } else if (media.msRequestFullscreen) {
+        media.msRequestFullscreen();
+      }
     }
   });
 });
