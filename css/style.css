@@ -121,7 +121,6 @@ body {
     display: block;
 }
 
-
 .qualification-card h3 {
     margin-top: 15px;
     font-size: 1.2em;
@@ -135,10 +134,9 @@ body {
 .card-img {
     width: 5px;      
     height: 5px;
-    object-fit: contain;  /* Keeps aspect ratio while fitting in box */
+    object-fit: contain;
     margin-bottom: 10px;
 }
-
 
 .feature-project {
     display: flex;
