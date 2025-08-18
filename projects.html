@@ -14,10 +14,10 @@
             <ul class="nav-right">
                 <li><a href="https://www.linkedin.com/in/nickolasbartle/">LinkedIn</a></li>
                 <li><a href="https://github.com/nbartle26">GitHub</a></li>
-                <li><a href= "photos\BartleNickolasDataAnalyst.pdf" target="_blank">Resume</a></li>
+                <li><a href="https://x.com/DJmakesData">Twitter</a></li>                
+                <li><a href= "photos\Bartle_Nickolas_DataAnalyst.pdf" target="_blank">Resume</a></li>
             </ul>
         </nav>
-
 
         <section class="feature-project">
             <div class="carousel">
@@ -44,19 +44,87 @@
                     <button class="carousel-btn prev">&#10094;</button>
                     <button class="carousel-btn next">&#10095;</button>
             </div>
-            <div class="feature-description">
-                <h2>Featured Project: Local Business Full-Stack Website</h3>
-                    <p style="color: red;">IN PROGRESS</p> 
-                <p>This project demonstrates full-stack web development skills by building a modern, responsive service business website with interactive features. On the frontend, I utilized HTML5, CSS3, and JavaScript to create a visually appealing and mobile-friendly user interface, including a dynamic online appointment booking system, a real-time search bar, and a custom quote calculator. Accessibility and user experience were prioritized through semantic markup, ARIA roles, and responsive design techniques, ensuring the site performs seamlessly across devices.</p>
-                <br>
-                <p>On the backend, I implemented a Node.js/Express server with a MySQL database to handle customer bookings, subscriptions, and reviews. Secure data handling, RESTful API design, and asynchronous operations were used to process and store user input efficiently. Additional features such as automated email notifications (via Nodemailer) and robust error handling further enhanced the reliability and professionalism of the platform. This project showcases my ability to integrate frontend interactivity with backend logic to deliver a complete, production-ready web application.</p>
-                <a href="https://github.com/nbartle26/2024YankeesDataAnalysis" target="_blank">Project Link</a>                <a href="https://nbartle26.github.io/wwpowerwash/" target="_blank">Website Link</a>
 
+            <div class="feature-description">
+                <h2>Featured Project: S&P 500 Risk ESG Analysis with AI & Machine Learning</h3>
+                    <p style="color: red;">IN PROGRESS</p> 
+                    <p>This intensive project leverages Python, SQL, and Tableau to construct and analyze ESG scores for S&P 500 companies, structured into 3 main phases that progressively increase automation, depth, and decision value.</p>
+                    <br>
+                    <p><b>Phase 1:</b> Integrated existing ESG datasets by scraping preset scores from Yahoo Finance (Sustainalytics) and MSCI. Established a clean SQL database foundation with company metadata, sector/industry classifications, and baseline E/S/G pillar scores.</p>
+                    <br>
+                    <p><b>Phase 2:</b> Built an automated AI/ML web scraping pipeline to extract ESG-related KPIs and controversy events from corporate filings, sustainability reports, and news. Applied natural language processing to map disclosures to MSCI’s 33 key issues, and implemented machine learning models in Python to compute Sustainalytics-style risk metrics (exposure, management, unmanaged risk) with configurable materiality weights at the sector, industry, and sub-industry levels.</p>
+                    <br>
+                    <p><b>Phase 3:</b> Developed interactive Tableau dashboards to translate ESG risk into actionable insights. Visualizations include peer benchmarking, sector-level heatmaps, time-series trendlines, and drill-downs into material issues and controversies—allowing stakeholders to effectively evaluate ESG risks, identify high-exposure firms, and support strategic decision-making.</p>
+                <a href="https://github.com/nbartle26/ESGRiskProject" target="_blank">Project Link</a>
             </div>
         </section>
 
 
     <section class="projects-grid">
+        <div class="project-card">
+            <div class="media-container">
+                <div class="img-wrapper">
+                    <img src="photos\fpcarousel1.jpg" alt="Full-Stack Image 1">
+                    <button class="fullscreen-btn" title="View Fullscreen">&#x26F6;</button>
+                </div> 
+                <div class="img-wrapper">
+                    <img src="photos\fpcarousel3.jpg" alt="Full-Stack Project Screenshot 2">
+                    <button class="fullscreen-btn" title="View Fullscreen">&#x26F6;</button>
+                </div> 
+                <div class="img-wrapper">
+                    <img src="photos\fpcarousel4.jpg" alt="Full-Stack Project Screenshot 3">
+                    <button class="fullscreen-btn" title="View Fullscreen">&#x26F6;</button>
+                </div>  
+                <div class="img-wrapper">
+                    <img src="photos\fpcarousel6.jpg" alt="Project Screenshot 4">
+                    <button class="fullscreen-btn" title="View Fullscreen">&#x26F6;</button>
+                </div> 
+            </div>
+            <h3>Local Business Full-Stack Website</h3>
+            <p style="color: red;">IN PROGRESS</p>                         <p>This project demonstrates full-stack web development skills by building a modern, responsive service business website with interactive features. On the frontend, I utilized HTML5, CSS3, and JavaScript to create a visually appealing and mobile-friendly user interface, including a dynamic online appointment booking system, a real-time search bar, and a custom quote calculator. Accessibility and user experience were prioritized through semantic markup, ARIA roles, and responsive design techniques, ensuring the site performs seamlessly across devices.</p>
+            <a href="https://github.com/nbartle26/wwpowerwash" target="_blank">Project Link</a>                <a href="https://nbartle26.github.io/wwpowerwash/" target="_blank">Website Link</a>
+        </div>
+
+             <div class="project-card">
+                <div class="img-wrapper">
+                    <img src="photos\wflogo.jpg" alt="Stuff+/wStuff+ Model">
+                </div>
+                <h3>Stuff+/wStuff+ Model</h3>  
+                <p>An R-based machine learning pipeline that estimates Stuff+ and wStuff+ from raw pitch-tracking data (TrackMan and/or TruMedia data). The system trains XGBoost models with pitcher-aware cross-validation and calibrates outputs to a standardized 100-based scale. Without exposing specific inputs, model explainability validates baseball-relevant relationships and highlights where a pitcher's repertoire over/under-performs expectations.<br><br> Final deliverables include pitch and pitcher-level leaderboards, usage-weighted (wStuff+) summaries, and contextual splits to support pitch design and game planning. </p>
+            </div>
+
+            <div class="project-card">
+                  <div class="img-wrapper">
+                    <img src="photos\wflogo.jpg" alt="xGB% Model WF logo">
+                </div>
+                <h3>xGB% Model</h2>
+                <p>An R-based machine learning pipeline that predicts xGB using select ball-flight characteristics. The model leverages XGBoost with grouped cross-validation and probability calibration, outputting tuning metrics including ROC-AUC and PR-AUC. Feature importance and SHAP analysis highlight which pitch traits most strongly influence groundball outcomes, while the final leaderboard tables compare actual vs. expected groundball rates across handedness matchups, and the metrics associated with them.<br><br> The model's output delivers actionable insights off precidtors, correlations, and deltas on how mechanics impact batted-ball tendencies.</p>                
+            </div>
+
+            <div class="project-card">
+                  <div class="img-wrapper">
+                    <img src="photos\wflogo.jpg" alt="xWhiff% WF logo">
+                </div>
+                <h3>xWhiff% Model</h2>
+                <p>An R-based machine learning pipeline that predicts xWhiff% using select ball-flight characteristics. The model leverages XGBoost with grouped cross-validation and probability calibration, outputting tuning metrics including ROC-AUC and PR-AUC. Feature importance and SHAP analysis highlight which pitch traits most strongly influence swing-and-miss outcomes, while the final leaderboard tables compare actual vs. expected whiff rates across handedness matchups, and the metrics associated with them.<br><br> The model's output delivers actionable insights off predictors, correlations, and deltas on how pitch design and mechanics impact swing-and-miss tendencies.</p>                
+            </div>
+
+            <div class="project-card">
+                  <div class="img-wrapper">
+                    <img src="photos\wflogo.jpg" alt="xHR% Model WF logo">
+                </div>
+                <h3>xHR% Model - Wake Forest</h2>
+                <p>An R-based machine learning pipeline that predicts xHR% using select ball-flight characteristics. The model leverages XGBoost with grouped cross-validation and probability calibration, outputting tuning metrics including ROC-AUC and PR-AUC. Feature importance and SHAP analysis highlight which characteristics most strongly elevate long-ball risk, while final leaderboard tables compare actual vs. expected home-run rates across handedness matchups and summarize the associated metrics.<br><br>The model outputs deliver actionable insights from correlations and deltas, linking pitch design and mechanics to home-run susceptibility</p>                
+            </div>
+
+            <div class="project-card">
+                  <div class="img-wrapper">
+                    <img src="photos\strikezoneheatmap.png" alt="strikezone heatmap">
+                </div>
+                <h3>Strikezone GAM Heatmap</h2>
+                <p>This project was building a expected strike heatmap based off umpire performance in a sample dataset. This is one of my earlier experices in R and i a foundational understanding of plotting and correlation relationships within large datasets.<br><br>This involved creating a GAM model and using data manipulation in R Studio to create the heatmap.</p>                
+            </div>
+
         <div class="project-card">
             <div class="media-container">
                 <div class="img-wrapper">
@@ -67,13 +135,6 @@
                     <img src="photos\2024yankeeswebsitepic1.jpg" alt="Yankees Visual 2">
                     <button class="fullscreen-btn" title="View Fullscreen">&#x26F6;</button>
                 </div>    
-                <div class="img-wrapper">
-                    <video controls muted>
-                        <source src="videos/project1_demo.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                    <button class="fullscreen-btn" title="View Fullscreen">&#x26F6;</button>
-                </div>
             </div>
 
             <h3>Advanced Data Visualization for 2024 Yankees Offense</h3>
@@ -100,16 +161,8 @@
                     <button class="fullscreen-btn" title="View Fullscreen">&#x26F6;</button>
                 </div>
                 <h3>Personal Portfolio Website</h3>
-                <p>This very site! Designed with HTML, CSS, and deployed via GitHub Pages. Demonstrates responsive layouts and professional branding.</p>
+                <p>This very site! Designed with HTML, CSS, and Javascript built in VS Code and deployed via GitHub Pages. Demonstrates responsive layouts and professional branding in a creative and personal design.</p>
                 <a href="https://github.com/nbartle26/portfolio-site" target="_blank">Project Link</a>
-            </div>
-             <div class="project-card">
-                <div class="img-wrapper">
-                    <img src="photos/stuffplus.jpg" alt="Project 4">
-                    <button class="fullscreen-btn" title="View Fullscreen">&#x26F6;</button>
-                </div>
-                <h3>Stuff+/wStuff+ Model & Visualization - R</h3>  
-                <p>A machine learning R Script that uses xgBoost modeling to determine pitcher's stuff+/wStuff+ metrics of off stuff-only inputs. This model uses real Trackman or combination of Trackman & TruMedia data, and also establishes real-life correlations between pitches (Ex. strong positive correlation between velo & pitch grade). Response variable was expected run value for the model. Additional images and code can't be displayed for privacy reasons, for additional information please reach out!</p>
             </div>
         </section>
 
@@ -126,6 +179,9 @@
                     </a>
                     <a href="https://www.instagram.com/nick.bartle/?hl=en" target="_blank">
                         <img src="photos/instagramlogo.png" alt="Instagram" class="navbar-icon">
+                    </a>
+                    <a href="https://x.com/DJmakesData" target="_blank">
+                        <img src="photos\twitterlogo.png" alt="Twitter" class="navbar-icon">
                     </a>
             </p>
         </footer>
