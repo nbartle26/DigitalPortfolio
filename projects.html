@@ -86,21 +86,23 @@
             <p style="color: red;">IN PROGRESS</p>                         <p>This project demonstrates full-stack web development skills by building a modern, responsive service business website with interactive features. On the frontend, I utilized HTML5, CSS3, and JavaScript to create a visually appealing and mobile-friendly user interface, including a dynamic online appointment booking system, a real-time search bar, and a custom quote calculator. Accessibility and user experience were prioritized through semantic markup, ARIA roles, and responsive design techniques, ensuring the site performs seamlessly across devices.</p>
             <a href="https://github.com/nbartle26/wwpowerwash" target="_blank">Project Link (Private)</a>           
         </div>
-
+<!--
              <div class="project-card">
                 <div class="img-wrapper">
                     <img src="photos\wflogo.jpg" alt="Stuff+/wStuff+ Model">
                 </div>
-                <h3>Stuff+/wStuff+ Model</h3>  
-                <p>An R-based machine learning pipeline that estimates Stuff+ and wStuff+ from raw pitch-tracking data (TrackMan and/or TruMedia data). The system trains XGBoost models with pitcher-aware cross-validation and calibrates outputs to a standardized 100-based scale. Without exposing specific inputs, model explainability validates baseball-relevant relationships and highlights where a pitcher's repertoire over/under-performs expectations.<br><br> Final deliverables include pitch and pitcher-level leaderboards, usage-weighted (wStuff+) summaries, and contextual splits to support pitch design and game planning. </p>
+                <h3>Stuff+/wStuff+ Model</h3> 
+                <p style="color: red;">IN PROGRESS</p>  
+                <p>An R-based machine learning pipeline that estimates Stuff+ pitching grade metrics. The script uses multiple covariats with multiple machine learning models  </p> 
             </div>
-
+        -->
             <div class="project-card">
                   <div class="img-wrapper">
                     <img src="photos\wflogo.jpg" alt="xGB% Model WF logo">
                 </div>
                 <h3>xGB% Model</h2>
-                <p>An R-based machine learning pipeline that predicts xGB using select ball-flight characteristics. The model leverages XGBoost with grouped cross-validation and probability calibration, outputting tuning metrics including ROC-AUC and PR-AUC. Feature importance and SHAP analysis highlight which pitch traits most strongly influence groundball outcomes, while the final leaderboard tables compare actual vs. expected groundball rates across handedness matchups, and the metrics associated with them.<br><br> The model's output delivers actionable insights off precidtors, correlations, and deltas on how mechanics impact batted-ball tendencies.</p>                
+                <p style="color: red;">IN PROGRESS</p>  
+                <p>An R-based machine learning pipeline using gradient boosting to predict xGB% on ball-flight characteristics only. The pipeline involves data preprocessing and filtering, feature engineering, model training with cross-validation, performance evaluation (ROC-AUC calculations), feature importance and correlation plots analysis, and pitcher leaderboard table creation. The plots help determine which model features are significant in influencing a GB outcome, and the final leaderboard compares actual vs. expected GB rates and identifies over/under-performers relative to their pitch characteristics.</p>              
             </div>
 
             <div class="project-card">
@@ -108,15 +110,26 @@
                     <img src="photos\wflogo.jpg" alt="xWhiff% WF logo">
                 </div>
                 <h3>xWhiff% Model</h2>
-                <p>An R-based machine learning pipeline that predicts xWhiff% using select ball-flight characteristics. The model leverages XGBoost with grouped cross-validation and probability calibration, outputting tuning metrics including ROC-AUC and PR-AUC. Feature importance and SHAP analysis highlight which pitch traits most strongly influence swing-and-miss outcomes, while the final leaderboard tables compare actual vs. expected whiff rates across handedness matchups, and the metrics associated with them.<br><br> The model's output delivers actionable insights off predictors, correlations, and deltas on how pitch design and mechanics impact swing-and-miss tendencies.</p>                
+                <p style="color: red;">IN PROGRESS</p>  
+                <p>An R-based machine learning model that uses gradient boosting to predict xWhiff% on ball-flight only metrics. The model is evaluated using ROC-AUC through 5-fold cross-validation. Feature importance and correlation plots help determine which model features play the most significant role in influencing swing and miss outcomes. The final leaderboard tables compare actual vs. expected whiff rates across different pitchers and the associated metrics with them.</p>
             </div>
 
             <div class="project-card">
                   <div class="img-wrapper">
                     <img src="photos\wflogo.jpg" alt="xHR% Model WF logo">
                 </div>
-                <h3>xHR% Model - Wake Forest</h2>
-                <p>An R-based machine learning pipeline that predicts xHR% using select ball-flight characteristics. The model leverages XGBoost with grouped cross-validation and probability calibration, outputting tuning metrics including ROC-AUC and PR-AUC. Feature importance and SHAP analysis highlight which characteristics most strongly elevate long-ball risk, while final leaderboard tables compare actual vs. expected home-run rates across handedness matchups and summarize the associated metrics.<br><br>The model outputs deliver actionable insights from correlations and deltas, linking pitch design and mechanics to home-run susceptibility</p>                
+                <h3>xHR% Model</h2>
+                <p style="color: red;">IN PROGRESS</p>  
+                <p>Another R-based machine learning model that uses gradient boosting to predict xHR% on ball-flight only characteristics. The model is evaluated using ROC-AUC through 5-fold cross-validation. Feature importance and correlation plots help determine which model features play the most significant role in influencing home run event outcomes. The final leaderboard tables compare actual vs. expected home run rates across different pitchers and the associated metrics with them.</p>                
+            </div>
+
+            <div class="project-card">
+                  <div class="img-wrapper">
+                    <img src="photos\wflogo.jpg" alt="xBABIP% Model WF logo">
+                </div>
+                <h3>xBABIP% Model</h2>
+                <p style="color: red;">IN PROGRESS</p>  
+                <p>Another R-based machine learning model that uses gradient boosting to predict xBABIP% on ball-flight only characteristics. The model is evaluated using ROC-AUC through 5-fold cross-validation. Feature importance and correlation plots help determine which model features play the most significant role in influencing hit probability on balls in play. The final leaderboard tables compare actual vs. expected BABIP rates across different pitchers and the associated metrics with them.</p>                
             </div>
 
             <div class="project-card">
@@ -124,7 +137,7 @@
                     <img src="photos\strikezoneheatmap.png" alt="strikezone heatmap">
                 </div>
                 <h3>Strikezone GAM Heatmap</h2>
-                <p>This project was building a expected strike heatmap based off umpire performance in a sample dataset. This is one of my earlier experices in R and i a foundational understanding of plotting and correlation relationships within large datasets.<br><br>This involved creating a GAM model and using data manipulation in R Studio to create the heatmap.</p>                
+                <p>This project was building a expected strike heatmap based off umpire performance in a sample dataset. This is one of my earlier experices in R and is a foundational understanding of plotting and correlation relationships within large datasets.<br><br>This involved creating a GAM model and using data manipulation in R Studio to create the heatmap.</p>                
             </div>
 
         <div class="project-card">
