@@ -15,7 +15,7 @@
                 <li><a href="https://www.linkedin.com/in/nickolasbartle/">LinkedIn</a></li>
                 <li><a href="https://github.com/nbartle26">GitHub</a></li>
                 <li><a href="https://x.com/DJmakesData">Twitter</a></li>                
-                <li><a href= "photos\Bartle_Nickolas_DataAnalyst.pdf" target="_blank">Resume</a></li>
+                <li><a href= "C:/Users/Owner/Desktop/Resumes/Specific Resumes/MSBA/Updated/UpdatedII/Baseball/Astros/Bartle_Nickolas_Baseball_Operations_Astros.pdf" target="_blank">Resume</a></li>
             </ul>
         </nav>
 
@@ -98,11 +98,20 @@
         -->
             <div class="project-card">
                   <div class="img-wrapper">
+                    <img src="photos\wflogo.jpg" alt="Stuff+ WF logo">
+                </div>
+                <h3>Stuff+ Model</h2>
+                <p style="color: red;"></p>  
+                <p>A comprehensive pitcher evaluation framework that uses stacking into a unified Stuff+ metric. Built using ensemble stacking methods in R, this system combines multiple XGBoost models with weighted aggregation to produce a single, holistic assessment of pitch quality. The model accounts for pitch characteristics and movement to generate grades that predict pitcher performance independent of outcomes. Includes validation against existing industry metrics and generates pitcher rankings with confidence intervals.</p>
+            </div>
+
+            <div class="project-card">
+                  <div class="img-wrapper">
                     <img src="photos\wflogo.jpg" alt="xGB% Model WF logo">
                 </div>
                 <h3>xGB% Model</h2>
-                <p style="color: red;">IN PROGRESS</p>  
-                <p>An R-based machine learning pipeline using gradient boosting to predict xGB% on ball-flight characteristics only. The pipeline involves data preprocessing and filtering, feature engineering, model training with cross-validation, performance evaluation (ROC-AUC calculations), feature importance and correlation plots analysis, and pitcher leaderboard table creation. The plots help determine which model features are significant in influencing a GB outcome, and the final leaderboard compares actual vs. expected GB rates and identifies over/under-performers relative to their pitch characteristics.</p>              
+                <p style="color: red;"></p>  
+                <p>An R-based machine learning pipeline using XGBoost to predict xGB% on ball-flight characteristics only. The pipeline involves data preprocessing and filtering, feature engineering, model training with cross-validation, performance and accuracy evaluation (ROC-AUC calculations), feature importance and correlation plots analysis, and pitcher leaderboard table creation. I also developed a interactive Shiny App calculator for real-time metric calculation for pitchers on their pitch characteristics to predict expected groundball rates. The plots help determine which model features are significant in influencing a GB outcome, and the final leaderboard compares actual vs. expected GB rates and identifies over/under-performers relative to their pitch characteristics.</p>              
             </div>
 
             <div class="project-card">
@@ -110,27 +119,47 @@
                     <img src="photos\wflogo.jpg" alt="xWhiff% WF logo">
                 </div>
                 <h3>xWhiff% Model</h2>
-                <p style="color: red;">IN PROGRESS</p>  
-                <p>An R-based machine learning model that uses gradient boosting to predict xWhiff% on ball-flight only metrics. The model is evaluated using ROC-AUC through 5-fold cross-validation. Feature importance and correlation plots help determine which model features play the most significant role in influencing swing and miss outcomes. The final leaderboard tables compare actual vs. expected whiff rates across different pitchers and the associated metrics with them.</p>
+                <p style="color: red;"></p>  
+                <p>An R-based machine learning model that uses XGBoost to predict xWhiff% on ball-flight only metrics. The model is evaluated using ROC-AUC through 5-fold cross-validation. Feature importance and correlation plots help determine which model features play the most significant role in influencing swing and miss outcomes. I also developed a interactive Shiny App calculator for real-time metric calculation for pitchers on their pitch characteristics to predict expected whiff rates. The final leaderboard tables compare actual vs. expected whiff rates across different pitchers and the associated metrics with them.</p>
             </div>
 
-            <div class="project-card">
-                  <div class="img-wrapper">
-                    <img src="photos\wflogo.jpg" alt="xHR% Model WF logo">
-                </div>
-                <h3>xHR% Model</h2>
-                <p style="color: red;">IN PROGRESS</p>  
-                <p>Another R-based machine learning model that uses gradient boosting to predict xHR% on ball-flight only characteristics. The model is evaluated using ROC-AUC through 5-fold cross-validation. Feature importance and correlation plots help determine which model features play the most significant role in influencing home run event outcomes. The final leaderboard tables compare actual vs. expected home run rates across different pitchers and the associated metrics with them.</p>                
-            </div>
 
             <div class="project-card">
                   <div class="img-wrapper">
                     <img src="photos\wflogo.jpg" alt="xBABIP% Model WF logo">
                 </div>
                 <h3>xBABIP% Model</h2>
-                <p style="color: red;">IN PROGRESS</p>  
-                <p>Another R-based machine learning model that uses gradient boosting to predict xBABIP% on ball-flight only characteristics. The model is evaluated using ROC-AUC through 5-fold cross-validation. Feature importance and correlation plots help determine which model features play the most significant role in influencing hit probability on balls in play. The final leaderboard tables compare actual vs. expected BABIP rates across different pitchers and the associated metrics with them.</p>                
+                <p style="color: red;"></p>  
+                <p>Another R-based machine learning model that uses XGBoost to predict xBABIP% on ball-flight only characteristics. The model is evaluated using ROC-AUC through 5-fold cross-validation. Feature importance and correlation plots help determine which model features play the most significant role in influencing hit probability on balls in play. I also developed a interactive Shiny App calculator for real-time metric calculation for pitchers on their pitch characteristics to predict expected BABIP rates The final leaderboard tables compare actual vs. expected BABIP rates across different pitchers and the associated metrics with them.</p>                
             </div>
+
+            <div class="project-card">
+                <div class="img-wrapper">
+                    <img src="photos\mlblogo.png" alt="Bayesian Aging Model">
+                    <button class="fullscreen-btn" title="View Fullscreen">&#x26F6;</button>
+                </div>
+                <h3>Bayesian Pitcher Aging & Decline Detection</h3>
+                <p>An advanced hierarchical Bayesian model built in R that estimates age curves for pitcher performance while simultaneously detecting individual changepoints indicating decline or injury impact. Uses MCMC sampling to model player-specific trajectories with population-level priors, allowing the system to identify when pitchers deviate from expected aging patterns. Incorporates changepoint detection algorithms to flag potential injury or skill degradation events, providing probabilistic estimates of decline timing. Visualizations include posterior distributions, credible intervals, and player-specific aging curves with identified inflection points.</p>
+            </div>
+
+
+        <div class="project-card">
+            <div class="img-wrapper">
+                <img src="photos\mlblogo.png" alt="Phillies OBP Prediction">
+                <button class="fullscreen-btn" title="View Fullscreen">&#x26F6;</button>
+            </div>
+            <h3>Future OBP Prediction Model</h3>
+            <p>This project implements an ensemble approach to predict future on-base percentage using FanGraphs data. Combined Ridge Regression, Gradient Boosting, and Random Forest models through weighted averaging, with extensive feature engineering including rolling averages, career trajectories, and plate discipline metrics. Performed comprehensive model validation using time-series cross-validation to prevent data leakage. Achieved strong predictive performance with detailed analysis of feature importance and model uncertainty quantification.</p>
+        </div>
+
+        <div class="project-card">
+            <div class="img-wrapper">
+                <img src="photos\mlblogo.png" alt="Monte Carlo Simulations">
+                <button class="fullscreen-btn" title="View Fullscreen">&#x26F6;</button>
+            </div>
+            <h3>Baseball Analytics Monte Carlo Simulations</h3>
+            <p>A collection of Monte Carlo simulation projects, tackling various baseball operations problems through probabilistic modeling. Includes playoff probability simulations accounting for strength of schedule and roster construction, contract optimization scenarios evaluating risk-adjusted player values, and roster construction simulations balancing performance uncertainty with budget constraints. Built in both R and Python, these simulations run thousands of iterations to generate probability distributions and confidence intervals for decision-making under uncertainty.</p>
+        </div>
 
             <div class="project-card">
                   <div class="img-wrapper">
