@@ -15,7 +15,8 @@
                 <li><a href="https://www.linkedin.com/in/nickolasbartle/">LinkedIn</a></li>
                 <li><a href="https://github.com/nbartle26">GitHub</a></li>
                 <li><a href="https://x.com/DJmakesData">Twitter</a></li>                
-                <li><a href= "photos/Resume.pdf" target="_blank">Resume</a></li>
+                <li><a href= "photos/Bartle_Nickolas_Data_Analyst.pdf" target="_blank">Resume</a></li>
+                <li><a href= "photos/Bartle_Nickolas_Baseball_Data_Analyst.pdf" target="_blank">Resume (Baseball)</a></li>
             </ul>
         </nav>
 
@@ -44,22 +45,24 @@
                     <button class="carousel-btn prev">&#10094;</button>
                     <button class="carousel-btn next">&#10095;</button>
             </div> -->
-            <div class="img-wrapper">
-                <img src="photos\esgmaintemp.png" alt="esg main temp image" style="max-width:100%; width:600px; height: 520px;; display:block; margin:0 auto;">
+        <div class="img-wrapper">
+                <img src="photos\mlblogo.png" alt="Bayesian Aging Model" style="max-width:100%; width:600px; height: 520px;; display:block; margin:0 auto;">
             </div>
             <div class="feature-description">
-                <h2>Featured Project: S&P 500 Risk ESG Analysis with AI & Machine Learning</h3>
+                <h2>Featured Project: Bayesian Pitcher Aging & Decline Detection Model</h2>
                     <p style="color: red;">IN PROGRESS</p> 
-                    <p>This intensive project leverages Python, SQL, and Tableau to construct and analyze ESG scores for S&P 500 companies, structured into 3 main phases that progressively increase automation, depth, and decision value.</p>
+                    <p>This advanced hierarchical Bayesian framework uses R to model individual pitcher aging trajectories and detect performance decline, processing 10+ years of Statcast data to provide front offices with injury risk assessments and workload management insights.</p>
                     <br>
-                    <p><b>Phase 1:</b> Integrated existing ESG datasets by scraping preset scores from Yahoo Finance (Sustainalytics) and MSCI. Established a clean SQL database foundation with company metadata, sector/industry classifications, and baseline E/S/G pillar scores.</p>
+                    <p><b>Phase 1:</b> Architected hierarchical Bayesian model to estimate age curves for velocity, movement, and command metrics across pitcher populations. Established decline patterns and individual risk assessments using 10+ years of Statcast data with uncertainty quantification through posterior distributions.</p>
                     <br>
-                    <p><b>Phase 2:</b> Built an automated AI/ML web scraping pipeline to extract ESG-related KPIs and controversy events from corporate filings, sustainability reports, and news. Applied natural language processing to map disclosures to MSCI’s 33 key issues, and implemented machine learning models in Python to compute Sustainalytics-style risk metrics (exposure, management, unmanaged risk) with configurable materiality weights at the sector, industry, and sub-industry levels.</p>
+                    <p><b>Phase 2:</b> Implemented changepoint detection algorithms to identify precise decline onset timing with statistical confidence intervals. System distinguishes between natural aging, mechanical degradation, and injury-related performance changes, enabling evidence-based workload management decisions.</p>
                     <br>
-                    <p><b>Phase 3:</b> Developed interactive Tableau dashboards to translate ESG risk into actionable insights. Visualizations include peer benchmarking, sector-level heatmaps, time-series trendlines, and drill-downs into material issues and controversies—allowing stakeholders to effectively evaluate ESG risks, identify high-exposure firms, and support strategic decision-making.</p>
-                <a href="https://github.com/nbartle26/ESGRiskProject" target="_blank">Project Link</a>
+                    <p><b>Phase 3:</b> Developed real-time posterior updating system incorporating new performance data to continuously refine decline probability estimates. Created interactive Shiny Apps dashboard translating complex Bayesian posterior distributions into actionable insights for coaching staff and front office personnel.</p>
+                <!-- <a href="https://github.com/nbartle26/BayesianAgingModel" target="_blank">Project Link</a> -->
             </div>
         </section>
+
+        
 
 
     <section class="projects-grid">
@@ -133,14 +136,14 @@
                 <p>Another R-based machine learning model that uses XGBoost to predict xBABIP% on ball-flight only characteristics. The model is evaluated using ROC-AUC through 5-fold cross-validation. Feature importance and correlation plots help determine which model features play the most significant role in influencing hit probability on balls in play. I also developed a interactive Shiny App calculator for real-time metric calculation for pitchers on their pitch characteristics to predict expected BABIP rates The final leaderboard tables compare actual vs. expected BABIP rates across different pitchers and the associated metrics with them.</p>                
             </div>
 
-            <div class="project-card">
+            <!-- <div class="project-card">
                 <div class="img-wrapper">
                     <img src="photos\mlblogo.png" alt="Bayesian Aging Model">
                     <button class="fullscreen-btn" title="View Fullscreen">&#x26F6;</button>
                 </div>
                 <h3>Bayesian Pitcher Aging & Decline Detection</h3>
                 <p>An advanced hierarchical Bayesian model built in R that estimates age curves for pitcher performance while simultaneously detecting individual changepoints indicating decline or injury impact. Uses MCMC sampling to model player-specific trajectories with population-level priors, allowing the system to identify when pitchers deviate from expected aging patterns. Incorporates changepoint detection algorithms to flag potential injury or skill degradation events, providing probabilistic estimates of decline timing. Visualizations include posterior distributions, credible intervals, and player-specific aging curves with identified inflection points.</p>
-            </div>
+            </div> -->
 
 
         <div class="project-card">
@@ -160,6 +163,29 @@
             <h3>Baseball Analytics Monte Carlo Simulations</h3>
             <p>A collection of Monte Carlo simulation projects, tackling various baseball operations problems through probabilistic modeling. Includes playoff probability simulations accounting for strength of schedule and roster construction, contract optimization scenarios evaluating risk-adjusted player values, and roster construction simulations balancing performance uncertainty with budget constraints. Built in both R and Python, these simulations run thousands of iterations to generate probability distributions and confidence intervals for decision-making under uncertainty.</p>
         </div>
+
+
+        <div class="project-card">
+            <div class="img-wrapper">
+                <img src="photos\DeaconFinancialServices.png" alt="DFS Fraud Detection Project">
+                <button class="fullscreen-btn" title="View Fullscreen">&#x26F6;</button>
+            </div>
+            <h3>Deacon Financial Services Fraud Detection Project</h3>
+            <p>Performed data preparation and cleaning on a dataset of 900,000 observations through Python to prepare for modeling and learning phase. Constructed multiple machine learning classification models (linear regression, logistic regression, weighted logistic, random forests, XGBoost) achieving 88% fraud detection rate and identifying key risk predictors through proper visualization and undersampling techniques. Implemented a 3-tier system for dealing with fraud applications based on optimized threshold levels; high, medium, and low</p>
+        </div>
+
+        
+        <div class="project-card">
+            <div class="img-wrapper">
+                <img src="photos\esgmaintemp.png" alt="ESG Risk Analysis">
+                <button class="fullscreen-btn" title="View Fullscreen">&#x26F6;</button>
+            </div>
+            <h3>S&P 500 Risk ESG Analysis with AI & Machine Learning</h3>
+            <p style="color: red;">IN PROGRESS</p>
+            <p>A comprehensive Python, SQL, and Tableau project analyzing ESG risk scores for S&P 500 companies. Integrated datasets from Yahoo Finance and MSCI, built automated AI/ML web scraping pipelines to extract ESG-related KPIs from corporate filings, and implemented ensemble machine learning models (logistic, management, unmanaged risk) with configurable materiality weights. Developed interactive Tableau dashboards with peer benchmarking, sector-level heatmaps, and time-series trendlines for strategic ESG risk decision-making.</p>
+            <a href="https://github.com/nbartle26/ESGRiskProject" target="_blank">Project Link</a>
+        </div>
+
 
             <div class="project-card">
                   <div class="img-wrapper">
