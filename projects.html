@@ -58,7 +58,7 @@
                     <p><b>Phase 2:</b> Implemented changepoint detection algorithms to identify precise decline onset timing with statistical confidence intervals. System distinguishes between natural aging, mechanical degradation, and injury-related performance changes, enabling evidence-based workload management decisions.</p>
                     <br>
                     <p><b>Phase 3:</b> Developed real-time posterior updating system incorporating new performance data to continuously refine decline probability estimates. Created interactive Shiny Apps dashboard translating complex Bayesian posterior distributions into actionable insights for coaching staff and front office personnel.</p>
-                <!-- <a href="https://github.com/nbartle26/BayesianAgingModel" target="_blank">Project Link</a> -->
+                <a href="https://github.com/nbartle26/BayesianAgingModel" target="_blank">Project Link</a>
             </div>
         </section>
 
@@ -167,11 +167,13 @@
 
         <div class="project-card">
             <div class="img-wrapper">
-                <img src="photos\DeaconFinancialServices.png" alt="DFS Fraud Detection Project">
-                <button class="fullscreen-btn" title="View Fullscreen">&#x26F6;</button>
+                <img src="photos/deaconfinancialservices.PNG" alt="Deacon Financial Services">
             </div>
-            <h3>Deacon Financial Services Fraud Detection Project</h3>
-            <p>Performed data preparation and cleaning on a dataset of 900,000 observations through Python to prepare for modeling and learning phase. Constructed multiple machine learning classification models (linear regression, logistic regression, weighted logistic, random forests, XGBoost) achieving 88% fraud detection rate and identifying key risk predictors through proper visualization and undersampling techniques. Implemented a 3-tier system for dealing with fraud applications based on optimized threshold levels; high, medium, and low</p>
+            <div class="project-info">
+                <h3>Deacon Financial Services</h3>
+                <p>Engineered a comprehensive fraud detection system processing 900,000+ loan applications using Python and scikit-learn. Performed extensive data preprocessing including handling class imbalance through strategic undersampling, feature engineering, and exploratory data analysis to identify fraud patterns. Constructed and evaluated multiple classification models—including Logistic Regression, Weighted Logistic Regression, Random Forest, and XGBoost—achieving 88% fraud detection rate with optimized precision-recall tradeoffs. Implemented a risk-stratified 3-tier classification system (high/medium/low risk) using probability threshold optimization to minimize false negatives while maintaining operational efficiency. Delivered actionable insights through comprehensive feature importance analysis, ROC-AUC evaluation (0.92 AUC), and confusion matrix interpretation, enabling data-driven decision-making for loan approval workflows. Project demonstrates proficiency in handling severely imbalanced datasets, ensemble methods, hyperparameter tuning, and translating machine learning predictions into business logic for financial risk management.</p>
+                <a href="https://github.com/nbartle26/fraud-detection-machine-learning-deacon-financial-services" target="_blank" rel="noopener noreferrer" class="project-link">Project Link</a>
+            </div>
         </div>
 
         
@@ -186,6 +188,27 @@
             <a href="https://github.com/nbartle26/ESGRiskProject" target="_blank">Project Link</a>
         </div>
 
+        <div class="project-card">
+            <div class="img-wrapper">
+                <img src="photos/ebaystreamlitproject.PNG" alt="eBay Market Streamlit Dashboard">
+            </div>
+            <div class="project-info">
+                <h3>eBay Market Streamlit Dashboard</h3>
+                <p>An interactive Python Streamlit application for analyzing eBay laptop sales data with comprehensive data wrangling and visualization capabilities. Features dynamic filtering by brand, price range, and condition, with real-time statistical summaries and trend analysis. Built with Pandas for robust data manipulation, Plotly for interactive charts, and Streamlit for rapid deployment. Demonstrates proficiency in data cleaning, exploratory data analysis, and modern Python web frameworks. Includes price distribution analysis, brand comparison tools, and condition-based performance metrics.</p>
+                <a href="https://github.com/nbartle26/eBayStreamlit" target="_blank" rel="noopener noreferrer" class="project-link">Project Link</a>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="img-wrapper">
+                <img src="photos/teslaproject.PNG" alt="Tesla Data Streamlit Dashboard">
+            </div>
+            <div class="project-info">
+                <h3>Tesla Data Streamlit Dashboard</h3>
+                <p>A Streamlit application analyzing Tesla stock performance and social media sentiment correlations. Integrated financial data with sentiment analysis from Twitter/Reddit to explore relationships between public perception and stock movements. Features include interactive time-series visualizations, sentiment scoring algorithms, correlation analysis, and predictive modeling components. Built using Pandas, Plotly, and natural language processing libraries. Demonstrates ability to combine financial analytics with alternative data sources for comprehensive market analysis. Group project showcasing collaboration and full-stack data science skills.</p>
+                <a href="https://github.com/nbartle26/TeslaStreamlitAnalysis" target="_blank" rel="noopener noreferrer" class="project-link">Project Link</a>
+            </div>
+        </div>
 
             <div class="project-card">
                   <div class="img-wrapper">
@@ -195,7 +218,7 @@
                 <p>This project was building a expected strike heatmap based off umpire performance in a sample dataset. This is one of my earlier experices in R and is a foundational understanding of plotting and correlation relationships within large datasets.<br><br>This involved creating a GAM model and using data manipulation in R Studio to create the heatmap.</p>                
             </div>
 
-        <div class="project-card">
+        <!-- <div class="project-card">
             <div class="media-container">
                 <div class="img-wrapper">
                     <img src="photos\2024yankeeswebsitevisual1.jpg" alt="Yankees Visual 1">
@@ -212,8 +235,8 @@
                 This project was a personal favorite, diving into offensive metrics for the 2024 Yankee Season. A custom Python codebase creates a Dash site with multiple data visualizations comparing hitters' actual performance to expected metrics. Built to help determine if hitters were underperforming or just unlucky.
             </p>
             <a href="https://github.com/nbartle26/2024YankeesDataAnalysis" target="_blank">Project Link</a>
-        </div>
-
+        </div> -->
+<!-- 
             <div class="project-card">
                   <div class="img-wrapper">
                     <img src="photos\platedisctempimage.jpg" alt="website project 1 alt">
@@ -223,8 +246,8 @@
                 <p style="color: red;">IN PROGRESS</p>                <p>A Python-focused codebase that scrapes, manipulates, and formats baseball data with the goal to visualize offensive performance in the strikezone. This visual details hot/cold zones of the hitter, their actual and expected statistics, performances vs specific pitch types, splits righty-lefty and lefty/right, and much more. </p> <br>
                 <p>This project utilized Pandas for robust data cleaning, transformation, and aggregation of Statcast data, including dynamic zone assignment based on pitch location. Engineered a custom strike zone mapping function to classify pitch locations into 9 standard zones and out-of-zone regions using conditional logic and coordinate binning. Built a Dash web application with interactive components, including a dropdown menu and responsive Plotly visualizations based on user input. Designed custom Plotly strike zone visualizations, integrating statistical overlays (AVG and xAVG) and dynamically adjusting label placement for clarity and comparison. Implemented real-time callback functions to update figures based on player selection, enabling exploratory analysis of offensive performance by zone. </p>
                 <a href="https://github.com/nbartle26/baseball-stats-analyzer" target="_blank">Project Link</a>
-                
-            </div>
+            </div> -->
+
             <div class="project-card">
                 <div class="img-wrapper">
                     <img src="photos\portfolioprojectimage.jpg" alt="Project 2">
